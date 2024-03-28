@@ -25,7 +25,7 @@ def analyze_dialog(dialog, prompts):
         messages.append({"role": "assistant", "content": prompt})
 
     chat_completion = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=100
     )
